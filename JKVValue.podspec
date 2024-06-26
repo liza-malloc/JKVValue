@@ -36,4 +36,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'JKVValue/**/*.{h,m}'
   s.public_header_files = 'JKVValue/Public/**/*.h'
   s.requires_arc = true
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
 end
