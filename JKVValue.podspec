@@ -29,7 +29,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Jeff Hui" => "jeff@jeffhui.net" }
 
-  s.ios.deployment_target = '6.0'
+  #s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.8'
   s.source       = { :git => "https://github.com/jeffh/JKVValue.git", :tag => "v#{s.version}" }
   s.source_files  = 'JKVValue/**/*.{h,m}'
